@@ -7,8 +7,8 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
 #import "DiyNavigation.h"
+#import "AViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +20,12 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-//    ViewController *vc = [[ViewController alloc] init];
+    AViewController *aVC = [[AViewController alloc] init];
+    DiyNavigation *myNavigation = [DiyNavigation sharedInstanceWithMainVC:aVC];
     
-    DiyNavigation *myNavigation = [DiyNavigation sharedInstance];
+    
+    
+//    DiyNavigation *myNavigation = [DiyNavigation sharedInstance];
     
     self.window.rootViewController = myNavigation;
     

@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  AViewController.h
 //  DIYNavigation
 //
-//  Created by 李亚东 on 16/11/25.
+//  Created by 李亚东 on 2016/12/3.
 //  Copyright © 2016年 李亚东. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AViewController : UIViewController
 
 @end
-

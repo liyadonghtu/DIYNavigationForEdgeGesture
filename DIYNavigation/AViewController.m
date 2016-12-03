@@ -1,32 +1,30 @@
 //
-//  ViewController.m
+//  AViewController.m
 //  DIYNavigation
 //
-//  Created by 李亚东 on 16/11/25.
+//  Created by 李亚东 on 2016/12/3.
 //  Copyright © 2016年 李亚东. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "DiyNavigation.h"
+#import "AViewController.h"
 #import "BViewController.h"
 
-@interface ViewController ()
+
+@interface AViewController ()
 
 @end
 
-@implementation ViewController
+@implementation AViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-
     UIButton *clickButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 150, 100, 30)];
     [clickButton setTitle:@"点击跳转" forState:UIControlStateNormal];
     [clickButton setBackgroundColor:[UIColor greenColor]];
     
     [clickButton addTarget:self action:@selector(handleAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:clickButton];
-    
 
 }
 
@@ -43,5 +41,15 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
