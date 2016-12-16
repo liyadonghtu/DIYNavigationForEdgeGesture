@@ -18,9 +18,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+     self.title = @"A控制器";
     self.view.backgroundColor = [UIColor whiteColor];
-    UIButton *clickButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 150, 100, 30)];
-    [clickButton setTitle:@"点击跳转" forState:UIControlStateNormal];
+    
+    
+    UIButton *clickButton = [[UIButton alloc] initWithFrame:CGRectMake(20, 200, self.view.frame.size.width - 40, 50)];
+    [clickButton setTitle:@"下一页" forState:UIControlStateNormal];
     [clickButton setBackgroundColor:[UIColor greenColor]];
     
     [clickButton addTarget:self action:@selector(handleAction:) forControlEvents:UIControlEventTouchUpInside];
